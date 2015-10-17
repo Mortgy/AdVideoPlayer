@@ -72,6 +72,7 @@
     self.AdPlayerView.hidden = NO;
     self.adPlayed = YES;
     
+    //Choose MediaFile Resolution URL
     AVAsset *asset = [AVAsset assetWithURL:[NSURL URLWithString:self.adObject.mediaFileLowResolution.adUrl]];
     AVPlayerItem *adPlayerItem = [[AVPlayerItem alloc]initWithAsset:asset];
     
@@ -108,24 +109,29 @@
     //Update Duration
     self.duration_lbl.text = [NSString stringWithFormat:@"%@ - %@",[self stringFromSeconds:[self getCurrentTimeForPlayer:self.adPlayer]], [self stringFromSeconds:CMTimeGetSeconds(self.adPlayer.currentItem.duration)]];
 
+    //Update Ad Duration Label
     if ((int)[self getCurrentTimeForPlayer:self.adPlayer] == 10) {
         [self.adClose_btn setHidden:NO];
     }
     
     int adDurationQuarter = self.adDuration / 4;
     
+    //Update Tracking 25% of Ad watched
     if ((int)[self getCurrentTimeForPlayer:self.adPlayer] == adDurationQuarter) {
         [Functions sendHttpRequestToUrl:self.adObject.EventFirstQuartile.url];
     }
     
+    //Update Tracking 55% of Ad watched
     if ((int)[self getCurrentTimeForPlayer:self.adPlayer] == (adDurationQuarter * 2)) {
         [Functions sendHttpRequestToUrl:self.adObject.EventMidpoint.url];
     }
     
+    //Update Tracking 75% of Ad watched
     if ((int)[self getCurrentTimeForPlayer:self.adPlayer] == (adDurationQuarter * 3)) {
         [Functions sendHttpRequestToUrl:self.adObject.EventThirdQuartile.url];
     }
     
+    //Update Tracking 100% of Ad watched
     if ((int)[self getCurrentTimeForPlayer:self.adPlayer] == (adDurationQuarter * 4)) {
         [Functions sendHttpRequestToUrl:self.adObject.EventComplete.url];
     }
@@ -201,6 +207,7 @@
     self.duration_lbl.text = [NSString stringWithFormat:@"%@ - %@",[self stringFromSeconds:[self getCurrentTimeForPlayer:self.vidPlayer]], [self stringFromSeconds:CMTimeGetSeconds(self.vidPlayer.currentItem.duration)]];
 }
 
+//get current time for player
 - (double) getCurrentTimeForPlayer:(AVPlayer*)player
 {
     AVPlayerItem * currentItem = player.currentItem;
@@ -214,6 +221,7 @@
     return startTime;
 }
 
+//get string value of seconds ( time format )
 - (NSString *) stringFromSeconds:(double) value
 {
     NSTimeInterval interval = value;

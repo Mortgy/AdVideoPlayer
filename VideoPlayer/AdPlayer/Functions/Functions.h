@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVAsset.h>
 
-//MediaFiles Resolutions
+//MediaFiles Resolutions Enum
 typedef NS_ENUM(NSInteger, AdVideoFileType)
 {
     AdVideoFileUnknown = 0,
