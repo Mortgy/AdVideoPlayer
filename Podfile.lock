@@ -1,0 +1,20 @@
+PODS:
+  - XMLDictionary (1.4)
+
+DEPENDENCIES:
+  - XMLDictionary (from `https://github.com/nicklockwood/XMLDictionary.git`, tag `1.4`)
+
+EXTERNAL SOURCES:
+  XMLDictionary:
+    :git: https://github.com/nicklockwood/XMLDictionary.git
+    :tag: '1.4'
+
+CHECKOUT OPTIONS:
+  XMLDictionary:
+    :git: https://github.com/nicklockwood/XMLDictionary.git
+    :tag: '1.4'
+
+SPEC CHECKSUMS:
+  XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
+
+COCOAPODS: 0.38.2
