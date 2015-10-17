@@ -73,7 +73,7 @@
     self.adPlayed = YES;
     
     //Choose MediaFile Resolution URL
-    AVAsset *asset = [AVAsset assetWithURL:[NSURL URLWithString:self.adObject.mediaFileLowResolution.adUrl]];
+    AVAsset *asset = [AVAsset assetWithURL:[NSURL URLWithString:self.adObject.mediaFileMediumResolution.adUrl]];
     AVPlayerItem *adPlayerItem = [[AVPlayerItem alloc]initWithAsset:asset];
     
     self.adPlayer = [AVPlayer playerWithPlayerItem:adPlayerItem];
@@ -101,6 +101,8 @@
     
     // Start Video instantly
     [self.vidPlayer play];
+    [self.playPause_btn setTitle:@"Pause" forState:UIControlStateNormal];
+
 }
 
 //Update Ad Events
