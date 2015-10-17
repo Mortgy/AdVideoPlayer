@@ -160,25 +160,28 @@
 
 //AdVideo did finish
 - (void) adDidFinishPlaying:(NSNotification *) notification {
-
-    [self.AdPlayerView setHidden:YES];  //Hide Ad View
-    [self.adClose_btn setHidden:YES];   //Hide Ad close button
-    self.adPlayed = YES;                //Mark Ad Video as played
-    
-    [self initializeTimerAndStartVideoPlaying];
+    [self closeAdProcess];
 }
 
 //Close Ad
 - (IBAction)closeAd:(id)sender {
-    //Hide Ad View
-    [self.AdPlayerView setHidden:YES];
-    [self.adClose_btn setHidden:YES];
     
-    //Notify Server Ad got closed.
+    //Notify Tracker Ad got closed.
     [Functions sendHttpRequestToUrl:self.adObject.EventClose.url];
     
     //Invalidate Ad Video
     [self.adPlayer pause];
+    [self closeAdProcess];
+}
+
+-(void) closeAdProcess {
+    [self.AdPlayerView setHidden:YES];  //Hide Ad View
+    [self.adClose_btn setHidden:YES];   //Hide Ad close button
+
+    //Hide Ad View
+    [self.AdPlayerView setHidden:YES];
+    [self.adClose_btn setHidden:YES];
+
     [self.adPlayerStatusTimer invalidate];
     
     //Resume Video Playing
