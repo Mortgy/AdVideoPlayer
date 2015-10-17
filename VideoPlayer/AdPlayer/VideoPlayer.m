@@ -16,15 +16,19 @@
 
 + (void)playMediaWithURL:(NSString *)contentVideoUrl andVastTagURL:(NSString *)vastTagUrl andShowUpSecondForMidrollAd:(int)seconds{
     
+    //Parse XML data into NSDictionary
     NSData * vastXMLData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:vastTagUrl]];
     NSDictionary * vast = [NSDictionary dictionaryWithXMLData:vastXMLData];
     
+    //Create model of VastTag data
     AdModal *modal = [[AdModal alloc] initWithAdDictionary:vast];
     
+    //Get app root  view controller to present video player from anywhere in app
     UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
     
     AdViewController *adViewController = [[AdViewController alloc] initWithNibName:@"AdVideoPlayer" bundle:[NSBundle mainBundle]];
     
+    //Move the required objects to video view Controller
     adViewController.contentVideoUrl = contentVideoUrl;
     adViewController.adObject = modal;
     adViewController.ShowUpSecondForMidrollAd = [NSNumber numberWithInt:seconds];
