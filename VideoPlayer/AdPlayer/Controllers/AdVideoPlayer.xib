@@ -22,7 +22,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMU-gE-bQ9" customClass="AVPlayerClass">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNr-t8-m87">
                     <rect key="frame" x="0.0" y="556" width="600" height="44"/>
@@ -65,7 +65,7 @@
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLZ-zX-Ehc" customClass="AVPlayerClass">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-xc-HeN">
                     <rect key="frame" x="541" y="20" width="39" height="30"/>

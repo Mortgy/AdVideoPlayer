@@ -41,6 +41,9 @@
 
     //initialize Video Player
     [self setupVideo];
+    
+    //Initialize Ad Video Player now to avoid delays when ad starts
+    [self setupAdVideo];
 }
 
 //Video Player first initialization
@@ -69,9 +72,6 @@
 //Initialize Ad Video
 - (void) setupAdVideo {
     
-    self.AdPlayerView.hidden = NO;
-    self.adPlayed = YES;
-    
     //Choose MediaFile Resolution URL
     AVAsset *asset = [AVAsset assetWithURL:[NSURL URLWithString:self.adObject.mediaFileMediumResolution.adUrl]];
     AVPlayerItem *adPlayerItem = [[AVPlayerItem alloc]initWithAsset:asset];
@@ -80,16 +80,32 @@
     [self.AdPlayerView setMovieToPlayer:self.adPlayer];
     
     self.adDuration = [Functions adDurationInSeconds:self.adObject.adDuration];
-    self.adPlayerStatusTimer = [NSTimer scheduledTimerWithTimeInterval:0.2
-                                                                 target:self
-                                                               selector:@selector(updateAdEvents)
-                                                               userInfo:nil
-                                                                repeats:YES];
     
     // Subscribe to the AVPlayerItem's DidPlayToEndTime notification.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(adDidFinishPlaying:) name:AVPlayerItemDidPlayToEndTimeNotification object:adPlayerItem];
 
+
 }
+
+- (void)startPlayingAdVideoPlayer {
+    
+    self.AdPlayerView.hidden = NO;
+    self.adPlayed = YES;
+    
+    //Create timer to update Events / Duration Label
+    self.adPlayerStatusTimer = [NSTimer scheduledTimerWithTimeInterval:0.2
+                                                                target:self
+                                                              selector:@selector(updateAdEvents)
+                                                              userInfo:nil
+                                                               repeats:YES];
+    //Create Close button timer
+    [NSTimer scheduledTimerWithTimeInterval:10
+                                     target:self
+                                   selector:@selector(showCloseButton)
+                                   userInfo:nil
+                                    repeats:NO];
+    
+    }
 
 - (void)initializeTimerAndStartVideoPlaying {
     //start Timer label update
@@ -105,16 +121,19 @@
 
 }
 
+//Show close button after 10 seconds reguardless if video is playing or not
+//in case if video file had buffering issues, we shouldn't bother user and bug his app
+- (void)showCloseButton {
+    
+    [self.adClose_btn setHidden:NO];
+}
+
 //Update Ad Events
 - (void)updateAdEvents {
     
-    //Update Duration
+    //Update Ad Duration Label
     self.duration_lbl.text = [NSString stringWithFormat:@"%@ - %@",[self stringFromSeconds:[self getCurrentTimeForPlayer:self.adPlayer]], [self stringFromSeconds:CMTimeGetSeconds(self.adPlayer.currentItem.duration)]];
 
-    //Update Ad Duration Label
-    if ((int)[self getCurrentTimeForPlayer:self.adPlayer] == 10) {
-        [self.adClose_btn setHidden:NO];
-    }
     
     int adDurationQuarter = self.adDuration / 4;
     
@@ -197,7 +216,7 @@
     if (!self.vidPlayer.rate == 0 && !self.adPlayed) {
         if ((int)[self getCurrentTimeForPlayer:self.vidPlayer] == [self.ShowUpSecondForMidrollAd intValue]) {
             [self playPause:nil];
-            [self setupAdVideo];
+            [self startPlayingAdVideoPlayer];
             [self.adPlayer play];
             
             //Report impression
