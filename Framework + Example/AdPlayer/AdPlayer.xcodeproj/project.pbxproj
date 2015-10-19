@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5002ABD81BD4D6630000645C /* AdPlayerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5002ABD71BD4D6630000645C /* AdPlayerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5002ABEF1BD4D67F0000645C /* AdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5002ABE21BD4D67F0000645C /* AdViewController.h */; settings = {ASSET_TAGS = (); }; };
+		5002ABF01BD4D67F0000645C /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002ABE31BD4D67F0000645C /* AdViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5002ABF11BD4D67F0000645C /* AVPlayerClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5002ABE41BD4D67F0000645C /* AVPlayerClass.h */; settings = {ASSET_TAGS = (); }; };
+		5002ABF21BD4D67F0000645C /* AVPlayerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002ABE51BD4D67F0000645C /* AVPlayerClass.m */; settings = {ASSET_TAGS = (); }; };
+		5002ABF31BD4D67F0000645C /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5002ABE71BD4D67F0000645C /* Functions.h */; settings = {ASSET_TAGS = (); }; };
+		5002ABF41BD4D67F0000645C /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002ABE81BD4D67F0000645C /* Functions.m */; settings = {ASSET_TAGS = (); }; };
+		5002ABF51BD4D67F0000645C /* AdModal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5002ABEA1BD4D67F0000645C /* AdModal.h */; settings = {ASSET_TAGS = (); }; };
+		5002ABF61BD4D67F0000645C /* AdModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002ABEB1BD4D67F0000645C /* AdModal.m */; settings = {ASSET_TAGS = (); }; };
+		5002ABF71BD4D67F0000645C /* VideoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5002ABEC1BD4D67F0000645C /* VideoPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5002ABF81BD4D67F0000645C /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002ABED1BD4D67F0000645C /* VideoPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		5002ABFC1BD4D6A80000645C /* XMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5002ABFA1BD4D6A80000645C /* XMLDictionary.h */; settings = {ASSET_TAGS = (); }; };
+		5002ABFD1BD4D6A80000645C /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002ABFB1BD4D6A80000645C /* XMLDictionary.m */; settings = {ASSET_TAGS = (); }; };
+		50698DC61BD5034B00E44469 /* AdVideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5002ABE11BD4D67F0000645C /* AdVideoPlayer.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5002ABD41BD4D6630000645C /* AdPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5002ABD71BD4D6630000645C /* AdPlayerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdPlayerFramework.h; sourceTree = "<group>"; };
+		5002ABD91BD4D6630000645C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5002ABE11BD4D67F0000645C /* AdVideoPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdVideoPlayer.xib; sourceTree = "<group>"; };
+		5002ABE21BD4D67F0000645C /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		5002ABE31BD4D67F0000645C /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		5002ABE41BD4D67F0000645C /* AVPlayerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerClass.h; sourceTree = "<group>"; };
+		5002ABE51BD4D67F0000645C /* AVPlayerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerClass.m; sourceTree = "<group>"; };
+		5002ABE71BD4D67F0000645C /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
+		5002ABE81BD4D67F0000645C /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
+		5002ABEA1BD4D67F0000645C /* AdModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdModal.h; sourceTree = "<group>"; };
+		5002ABEB1BD4D67F0000645C /* AdModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdModal.m; sourceTree = "<group>"; };
+		5002ABEC1BD4D67F0000645C /* VideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		5002ABED1BD4D67F0000645C /* VideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		5002ABFA1BD4D6A80000645C /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		5002ABFB1BD4D6A80000645C /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		50698DC01BD5032100E44469 /* AdPlayerUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdPlayerUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50698DC21BD5032100E44469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5002ABD01BD4D6630000645C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50698DBD1BD5032100E44469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5002ABCA1BD4D6630000645C = {
+			isa = PBXGroup;
+			children = (
+				5002ABD61BD4D6630000645C /* AdPlayerFramework */,
+				50698DC11BD5032100E44469 /* AdPlayerUI */,
+				5002ABD51BD4D6630000645C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5002ABD51BD4D6630000645C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5002ABD41BD4D6630000645C /* AdPlayer.framework */,
+				50698DC01BD5032100E44469 /* AdPlayerUI.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5002ABD61BD4D6630000645C /* AdPlayerFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5002ABDF1BD4D67F0000645C /* AdPlayer */,
+				5002ABD71BD4D6630000645C /* AdPlayerFramework.h */,
+				5002ABD91BD4D6630000645C /* Info.plist */,
+			);
+			path = AdPlayerFramework;
+			sourceTree = "<group>";
+		};
+		5002ABDF1BD4D67F0000645C /* AdPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5002ABF91BD4D69A0000645C /* XMLDictionary */,
+				5002ABE01BD4D67F0000645C /* Controllers */,
+				5002ABE61BD4D67F0000645C /* Functions */,
+				5002ABE91BD4D67F0000645C /* Model */,
+				5002ABEC1BD4D67F0000645C /* VideoPlayer.h */,
+				5002ABED1BD4D67F0000645C /* VideoPlayer.m */,
+			);
+			path = AdPlayer;
+			sourceTree = "<group>";
+		};
+		5002ABE01BD4D67F0000645C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5002ABE11BD4D67F0000645C /* AdVideoPlayer.xib */,
+				5002ABE21BD4D67F0000645C /* AdViewController.h */,
+				5002ABE31BD4D67F0000645C /* AdViewController.m */,
+				5002ABE41BD4D67F0000645C /* AVPlayerClass.h */,
+				5002ABE51BD4D67F0000645C /* AVPlayerClass.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5002ABE61BD4D67F0000645C /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				5002ABE71BD4D67F0000645C /* Functions.h */,
+				5002ABE81BD4D67F0000645C /* Functions.m */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		5002ABE91BD4D67F0000645C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5002ABEA1BD4D67F0000645C /* AdModal.h */,
+				5002ABEB1BD4D67F0000645C /* AdModal.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5002ABF91BD4D69A0000645C /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				5002ABFA1BD4D6A80000645C /* XMLDictionary.h */,
+				5002ABFB1BD4D6A80000645C /* XMLDictionary.m */,
+			);
+			name = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		50698DC11BD5032100E44469 /* AdPlayerUI */ = {
+			isa = PBXGroup;
+			children = (
+				50698DC21BD5032100E44469 /* Info.plist */,
+			);
+			path = AdPlayerUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5002ABD11BD4D6630000645C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5002ABF71BD4D67F0000645C /* VideoPlayer.h in Headers */,
+				5002ABD81BD4D6630000645C /* AdPlayerFramework.h in Headers */,
+				5002ABFC1BD4D6A80000645C /* XMLDictionary.h in Headers */,
+				5002ABEF1BD4D67F0000645C /* AdViewController.h in Headers */,
+				5002ABF11BD4D67F0000645C /* AVPlayerClass.h in Headers */,
+				5002ABF31BD4D67F0000645C /* Functions.h in Headers */,
+				5002ABF51BD4D67F0000645C /* AdModal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5002ABD31BD4D6630000645C /* AdPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5002ABDC1BD4D6630000645C /* Build configuration list for PBXNativeTarget "AdPlayer" */;
+			buildPhases = (
+				5002ABCF1BD4D6630000645C /* Sources */,
+				5002ABD01BD4D6630000645C /* Frameworks */,
+				5002ABD11BD4D6630000645C /* Headers */,
+				5002ABD21BD4D6630000645C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdPlayer;
+			productName = AdPlayerFramework;
+			productReference = 5002ABD41BD4D6630000645C /* AdPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50698DBF1BD5032100E44469 /* AdPlayerUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50698DC31BD5032100E44469 /* Build configuration list for PBXNativeTarget "AdPlayerUI" */;
+			buildPhases = (
+				50698DBC1BD5032100E44469 /* Sources */,
+				50698DBD1BD5032100E44469 /* Frameworks */,
+				50698DBE1BD5032100E44469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdPlayerUI;
+			productName = AdPlayerUI;
+			productReference = 50698DC01BD5032100E44469 /* AdPlayerUI.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5002ABCB1BD4D6630000645C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = mortgy;
+				TargetAttributes = {
+					5002ABD31BD4D6630000645C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					50698DBF1BD5032100E44469 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 5002ABCE1BD4D6630000645C /* Build configuration list for PBXProject "AdPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5002ABCA1BD4D6630000645C;
+			productRefGroup = 5002ABD51BD4D6630000645C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5002ABD31BD4D6630000645C /* AdPlayer */,
+				50698DBF1BD5032100E44469 /* AdPlayerUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5002ABD21BD4D6630000645C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50698DBE1BD5032100E44469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50698DC61BD5034B00E44469 /* AdVideoPlayer.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5002ABCF1BD4D6630000645C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5002ABF41BD4D67F0000645C /* Functions.m in Sources */,
+				5002ABF21BD4D67F0000645C /* AVPlayerClass.m in Sources */,
+				5002ABF61BD4D67F0000645C /* AdModal.m in Sources */,
+				5002ABF01BD4D67F0000645C /* AdViewController.m in Sources */,
+				5002ABF81BD4D67F0000645C /* VideoPlayer.m in Sources */,
+				5002ABFD1BD4D6A80000645C /* XMLDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50698DBC1BD5032100E44469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5002ABDA1BD4D6630000645C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5002ABDB1BD4D6630000645C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5002ABDD1BD4D6630000645C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AdPlayerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mortgy.AdPlayerFramework;
+				PRODUCT_NAME = AdPlayer;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		5002ABDE1BD4D6630000645C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AdPlayerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mortgy.AdPlayerFramework;
+				PRODUCT_NAME = AdPlayer;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		50698DC41BD5032100E44469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AdPlayerUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mortgy.AdPlayerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50698DC51BD5032100E44469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AdPlayerUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mortgy.AdPlayerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5002ABCE1BD4D6630000645C /* Build configuration list for PBXProject "AdPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5002ABDA1BD4D6630000645C /* Debug */,
+				5002ABDB1BD4D6630000645C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5002ABDC1BD4D6630000645C /* Build configuration list for PBXNativeTarget "AdPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5002ABDD1BD4D6630000645C /* Debug */,
+				5002ABDE1BD4D6630000645C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50698DC31BD5032100E44469 /* Build configuration list for PBXNativeTarget "AdPlayerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50698DC41BD5032100E44469 /* Debug */,
+				50698DC51BD5032100E44469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5002ABCB1BD4D6630000645C /* Project object */;
+}
